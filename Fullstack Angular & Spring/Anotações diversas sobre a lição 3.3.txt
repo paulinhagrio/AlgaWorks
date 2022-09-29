@@ -1,0 +1,2 @@
+Flyway => ferramenta de migração de BC. Ajuda na evolução do Schema no nosso banco 
+de uma forma fácil e confiável
