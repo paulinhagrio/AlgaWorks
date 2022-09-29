@@ -1,0 +1,30 @@
+Criação da Model Categoria, CategoriaRepository, o controller CategoriaResource e criação do método
+Get:
+
+
+Jpa Repository => traz vários métodos utéis para a aplicação, como o findAll, delete, getOne, etc
+
+@RestController  => indica que é um controlador Rest e que o retorno já será convertido para json
+@RequestMapping("/categorias") => indica que estamos fazendo o mapeamento da requisição
+
+
+
+@RestController
+@RequestMapping("/categorias")
+public class CategoriaResource {
+
+    @Autowired
+    private CategoriaRepository categoriaRepository;
+
+    @GetMapping
+    public List<Categoria> listar(){
+        return  categoriaRepository.findAll(); => Como injetamos o categoriaRepository, essa classe 
+do Spring Data já implementa o método findAll que já faz o SELECT * FROM CATEGORIA pra gente.
+
+
+   @GetMapping  => é o mapeamento do get na url /categoria, dessa forma cai exatamente no método findAll
+
+   @Autowired  => essa notação é para dizer, procure uma implementação do CategoriaReposito e injete 
+em categoriaRepository (isso é feito através do Spring Data Jpa)
+
+

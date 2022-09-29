@@ -1,2 +1,7 @@
 Flyway => ferramenta de migração de BC. Ajuda na evolução do Schema no nosso banco 
 de uma forma fácil e confiável
+
+A dependência do  Flyway no Pom irá procurar script de migração (arquivos SQL => 1ª migration, 2ª migration, etc)
+
+
+Criação da primeira tabela (tabela categoria)
