@@ -1,0 +1,20 @@
+REST => integra dois sistemas
+
+API REST:
+
+API => Significa que a minha aplicação expõe algo para que serviços externos consigam chamar a 
+minha aplicação.
+
+REST => Significa transferência de recursos (ex: salvar uma nova pessoa no meu sistema)
+
+
+* Na lição 1.6 => Configuração inicial do MySql
+
+
+Protocolo HTTP:
+
+HTTP Request (verbos Get, Post, Put, etc)
+_________________________________________ >    Aqui no Request, pode ser um browser (com javascript, o Postman ou qq outra linguagem que utilize o Protocolo HTTP
+
+HTTP Response (code: 200 OK, 404, 500, etc) e resposta: nome: Paulo; código: 00010, etc
+<_________________________________________

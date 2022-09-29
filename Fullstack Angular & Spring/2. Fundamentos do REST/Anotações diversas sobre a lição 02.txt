@@ -1,0 +1,14 @@
+Recursos:
+
+
+URL => Recupera um recurso (ex: http://barcelona.com/jogadores), recurso jogadores
+
+URI => É a parte que identifica um recurso (ex: http://barcelona.com/jogadores/10), no caso é o id 10
+
+URL é uma URI
+
+
+Representação de um Recurso (não confundir com o próprio recurso):
+Pode ser uma imagem, um JSON ou um XML
+
+Definimos através dos headers http
