@@ -1,0 +1,37 @@
+Salvando a primeira Categoria - usando o Post e criando o método findById
+
+
+
+
+Categoria categoriaSalva => categoriaRepository.save(categoria);  => permite que eu pegue o ID
+
+
+HttpServletResponse response => é preciso no retorno (na resposta) ter um Headers de respota (do Postman)
+chamado de Location pra eu informar como eu recupero esse recurso que acabou de ser criado no banco de 
+dados para isso precisamos receber o HttpServletResponse response para podermos trabalhar com esse 
+Header
+
+
+
+URI uri = ServletUriComponentsBuilder.fromCurrentRequestUri().path("/{codigo}")
+               .buildAndExpand(categoriaSalva.getCodigo()).toUri();
+
+
+fromCurrentRequestUri() => a partir da requisição atual
+
+
+
+Para facilitar, podemos já retornar a nova categoria salva (o novo recurso criado) em formato json
+ no body.
+
+
+
+
+Se for retornar dessa forma => return ResponseEntity.status(HttpStatus.CREATED);
+não irá precisar da anotation @ResponseStatus(HttpStatus.CREATED)
+
+
+
+
+* por algum motivo o método findbyone não existe no CategoriaRepository por isso usei o findById
+
